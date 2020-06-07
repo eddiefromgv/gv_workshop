@@ -1,0 +1,14 @@
+$transparent-black: rgba(0, 0, 0, 0.73);
+$light-color: #fff;
+$light-blue: #0092D6;
+$main-font-color: #5E5E5E;
+$more-transparent-black: rgba(0,0,0, 0.45);
+$basic-font-size: 13px;
+$fixed: 0px;
+$matt-blue: #103D4F;
+$dark-color: #000;
+
+@mixin black-background {
+    background-color: $transparent-black;
+    color: $light-color;
+}
