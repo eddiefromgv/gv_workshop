@@ -163,68 +163,6 @@ p {
   background-color: #f9ad0c;
 }
 
-.learn-more {
-  padding: 12em 0em;
-}
-.learn-more form fieldset {
-  margin: 2em 0em;
-}
-.learn-more form input,
-.learn-more form textarea {
-  border: none;
-}
-.learn-more form input:focus,
-.learn-more form textarea:focus {
-  border: 1px solid #609b89;
-  outline: none;
-}
-.learn-more form [type="text"],
-.learn-more form [type="tel"],
-.learn-more form [type="email"] {
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-  background-color: #f5f5f5;
-}
-.learn-more form [type="text"]::placeholder,
-.learn-more form [type="tel"]::placeholder,
-.learn-more form [type="email"]::placeholder {
-  font-size: 1.2em;
-  color: #4d5354;
-  font-family: "Krub", sans-serif;
-}
-.learn-more form textarea {
-  width: 100%;
-  background-color: #f5f5f5;
-  height: 8em;
-  padding: 1em;
-  resize: none;
-}
-.learn-more form textarea::placeholder {
-  font-size: 1.2em;
-  color: #4d5354;
-  font-family: "Krub", sans-serif;
-}
-.learn-more form [for*="want-"] {
-  font-size: 1.3em;
-}
-.learn-more form [for*="want-"] {
-  display: block;
-}
-.learn-more form [type="submit"] {
-  margin-top: 2em;
-  padding: 1em 2em;
-  border-radius: 2.5em;
-  transition: 1s;
-  background-color: #96bf34;
-  color: #fff;
-  font-size: 1.6em;
-  text-transform: uppercase;
-}
-.learn-more form [type="submit"]:hover {
-  background-color: #f9ad0c;
-}
-
 .lists {
   padding: 10em;
 }
@@ -279,4 +217,54 @@ p {
 .lists table:nth-of-type(2) tbody [type="documentation"]:hover {
   background-color: #609b89;
   transform: rotate3d(2, 2, 2, 360deg);
+}
+
+.learn-more {
+  padding: 12em 0em;
+}
+.learn-more form fieldset {
+  margin: 2em 0em;
+}
+.learn-more form input,
+.learn-more form textarea {
+  border: none;
+}
+.learn-more form input:focus,
+.learn-more form textarea:focus {
+}
+
+.learn-more form [type="text"]::placeholder,
+.learn-more form [type="tel"]::placeholder,
+.learn-more form [type="email"]::placeholder {
+  font-size: 1.2em;
+  color: #4d5354;
+  font-family: "Krub", sans-serif;
+}
+.learn-more form textarea {
+  width: 100%;
+  background-color: #f5f5f5;
+  height: 8em;
+  padding: 1em;
+  resize: none;
+}
+.learn-more form textarea::placeholder {
+  font-size: 1.2em;
+  color: #4d5354;
+  font-family: "Krub", sans-serif;
+}
+.learn-more form [for*="want-"] {
+  font-size: 1.9em;
+}
+.learn-more form [for*="want-"] {
+  display: block;
+}
+.learn-more form [type="submit"] {
+  margin-top: 2em;
+  padding: 1em 2em;
+  border-radius: 2.5em;
+  transition: 1s;
+  background-color: #96bf34;
+  color: #fff;
+  font-size: 1.6em;
+  text-transform: uppercase;
 }
