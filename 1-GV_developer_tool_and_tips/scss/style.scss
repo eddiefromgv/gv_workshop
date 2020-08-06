@@ -24,6 +24,18 @@ a {
     }
 }
 
+span.error {
+    display: none;
+}
+
+input.error {
+    border: 2px solid red;
+}
+
+.error:not(input) {
+    color: red;
+}
+
 .active-header {
     color: $main-color !important;
     border-bottom: 3px solid $main-color !important;
@@ -382,7 +394,7 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        max-width: 1170px;
+        max-width: 1140px;
 
         div {
             margin: 0 2em;
@@ -505,7 +517,7 @@ header {
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: center;
-        max-width: 1170px;
+        max-width: 1140px;
 
         .img-holder {
             flex-basis: 33%;
@@ -614,5 +626,128 @@ header {
         }
 
 
+    }
+}
+
+.book-a-seat {
+    .package-cart {
+        text-align: center;
+        margin-top: 2em;
+
+        header.cart {
+            background-image: none;
+            height: auto;
+            padding: $fixed;
+
+            h3 {
+                display: inline-block;
+                padding: 1em;
+                font-size: 1.5em;
+                font-weight: 600;
+
+            }
+
+            h3:first-of-type {
+                background-color: $main-color;
+                width: 30%;
+                margin-right: -5px;
+            }
+
+            h3:last-of-type {
+                background-color: $font-color;
+                width: 70%;
+            }
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 1.3em;
+
+                [href='#book-a-seat'] {
+                    background-color: $font-color;
+                    border: none;
+                    transition: 1s;
+
+                    &:hover {
+                        background-color: $nav-color;
+                    }
+                }
+            }
+
+            li:nth-of-type(2n-1) {
+                background-color: $lighter-gray;
+            }
+        }
+
+    }
+
+    .make-an-order {
+        background-image: url(../img/book-a-seat.jpg);
+        @include background-properties;
+        padding: 3em 0em;
+
+        .order-claim {
+            text-align: center;
+            margin-bottom: 2em;
+
+            h3,
+            p,
+            h2 {
+                color: white;
+            }
+
+            h2 {
+                span {
+                    color: $main-color;
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .form-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            form {
+                display: flex;
+                justify-items: center;
+                justify-content: space-around;
+                margin: $fixed;
+                flex-basis: 50%;
+
+                input {
+                    flex-basis: 25%;
+                    margin: 0px 1em;
+                    padding: 1em 2em;
+
+                }
+            }
+
+            button {
+                background-color: $font-color;
+                border: none;
+                transition: 1s;
+
+                &:hover {
+                    background-color: transparent;
+                    border-color: white;
+
+                    i {
+                        background-color: $font-color;
+                    }
+                }
+
+                i {
+                    display: inline-block;
+                    background-color: $main-color;
+                    padding: .5em 1em;
+                    margin-right: 1em;
+                    border-radius: 3px;
+                }
+            }
+        }
     }
 }
